@@ -25,15 +25,15 @@ export default function App() {
     event.preventDefault();
 
     if (formData.password === formData.passwordConfirm) {
-      console.log("Successfully signed up");
+      alert("Successfully signed up");
     } else {
-      console.log("Passwords do not match");
+      alert("Passwords do not match");
       // we add a return statement below so that the code below never runs if the passwords do not match
       return;
     }
 
     if (formData.joinedNewsletter) {
-      console.log("Thanks for signing up for our newsletter!");
+      alert("Thanks for signing up for our newsletter!");
     }
   }
 
